@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="NopCommerce Suite">
+
+    <listeners>
+
+
+            <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+
+    </listeners>
+
+    <test name="Registration Tests">
+        <classes>
+            <class name="tests.RegistrationTests"/>
+        </classes>
+    </test>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Cart Tests">
+        <classes>
+            <class name="tests.CartTests"/>
+        </classes>
+    </test>
+
+</suite>

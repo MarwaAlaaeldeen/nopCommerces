@@ -12,7 +12,7 @@ public class Register {
     //locators
     private static final By firstNameField = By.id("FirstName");
     private static final By lastNameField = By.id("LastName");
-    private static final By emailField = By.id("Email");
+    private static final By emailField = By.xpath("//input[@id='Email']");
     private static final By passwordField = By.id("Password");
     private static final By confirmPasswordField = By.id("ConfirmPassword");
     private static final By registerButton = By.xpath("//button[contains(.,'Register')]");

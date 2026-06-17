@@ -3,10 +3,10 @@ package pages.nopcommerce;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class productDetails {
+public class ProductDetails {
     WebDriver driver;
 
-    public productDetails(WebDriver driver) {
+    public ProductDetails(WebDriver driver) {
         this.driver = driver;
     }
     //locators

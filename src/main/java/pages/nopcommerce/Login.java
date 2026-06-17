@@ -21,18 +21,18 @@ public class Login {
     private static final By logoutLink = By.xpath("//div[@class='header-links']//a[.='Log out']");
     private static final By loginErrorMessage = By.xpath("//div[contains(@class,'message-error')]");
     //actions
-    public void validLogin(String email, String password) {
+    public void Login(String email, String password) {
         driver.findElement(loginLink).click();
         driver.findElement(emailField).sendKeys(email);
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(loginButton).click();
     }
-    public void invalidLogin(String email, String password) {
-        driver.findElement(loginLink).click();
-        driver.findElement(emailField).sendKeys(email);
-        driver.findElement(passwordField).sendKeys(password);
-        driver.findElement(loginButton).click();
-    }
+//    public void invalidLogin(String email, String password) {
+//        driver.findElement(loginLink).click();
+//        driver.findElement(emailField).sendKeys(email);
+//        driver.findElement(passwordField).sendKeys(password);
+//        driver.findElement(loginButton).click();
+//    }
     public String getLoginErrorMessage() {
         return driver.findElement(loginErrorMessage).getText();
     }
